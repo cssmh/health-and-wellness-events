@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "General Checkup",
+    "image_url": "https://i.ibb.co/fYFcCG8/image-1.jpg",
+    "description": "A routine health examination to assess overall well-being and detect potential health issues."
+  },
+  {
+    "id": 2,
+    "name": "Dental Care",
+    "image_url": "https://i.ibb.co/MPDXdbx/image-2.jpg",
+    "description": "Comprehensive dental services including cleanings, fillings, and oral health assessments."
+  },
+  {
+    "id": 3,
+    "name": "Pediatric Care",
+    "image_url": "https://i.ibb.co/G9GFC2F/image-3.jpg",
+    "description": "Specialized medical care for infants, children, and adolescents, ensuring their health and development."
+  },
+  {
+    "id": 4,
+    "name": "Emergency Medicine",
+    "image_url": "https://i.ibb.co/gDk1KWh/image-5.jpg",
+    "description": "Immediate medical care for critical conditions, injuries, and life-threatening emergencies."
+  },
+  {
+    "id": 5,
+    "name": "Women's Health",
+    "image_url": "https://i.ibb.co/SBP5ny7/image-7.jpg",
+    "description": "Comprehensive healthcare services addressing women's unique health needs and concerns."
+  },
+  {
+    "id": 6,
+    "name": "Radiology Services",
+    "image_url": "https://i.ibb.co/x2M4jCb/post-1-img.jpg",
+    "description": "Diagnostic imaging services, including X-rays, CT scans, and MRI examinations."
+  },
+  {
+    "id": 7,
+    "name": "Cardiology",
+    "image_url": "https://i.ibb.co/pycdCBp/3.jpg",
+    "description": "Specialized care for heart-related issues, including diagnostic tests and treatment plans."
+  },
+  {
+    "id": 8,
+    "name": "Mental Health Counseling",
+    "image_url": "https://i.ibb.co/Vg7Vk3x/04-gallery.jpg",
+    "description": "Therapeutic services for individuals facing mental health challenges, offering counseling and support."
+  },
+  {
+    "id": 9,
+    "name": "Orthopedic Services",
+    "image_url": "https://i.ibb.co/YBfqDWy/4.jpg",
+    "description": "Medical care focused on the musculoskeletal system, addressing bone, joint, and muscle conditions."
+  }
+]
