@@ -8,7 +8,7 @@ const Navbar = () => {
         to={"/"}
         className={({ isActive }) =>
           isActive
-            ? "bg-green-400 text-white px-2 py-1 rounded-md"
+            ? "bg-custom-blue text-white px-2 py-1 rounded-md"
             : "px-2 py-1 rounded-md"
         }
       >
@@ -18,7 +18,7 @@ const Navbar = () => {
         to={"/profile"}
         className={({ isActive }) =>
           isActive
-            ? "bg-green-400 text-white px-2 py-1 rounded-md"
+            ? "bg-custom-blue text-white px-2 py-1 rounded-md"
             : "px-2 py-1 rounded-md"
         }
       >
@@ -28,7 +28,7 @@ const Navbar = () => {
         to={"/services"}
         className={({ isActive }) =>
           isActive
-            ? "bg-green-400 text-white px-2 py-1 rounded-md"
+            ? "bg-custom-blue text-white px-2 py-1 rounded-md"
             : "px-2 py-1 rounded-md"
         }
       >
@@ -38,7 +38,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-300 mt-4 mb-1 px-8">
+    <div className="navbar bg-base-300 my-4 px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className=" -ghost lg:hidden">
