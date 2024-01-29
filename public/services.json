@@ -3,54 +3,63 @@
     "id": 1,
     "name": "General Checkup",
     "image_url": "https://i.ibb.co/fYFcCG8/image-1.jpg",
-    "description": "A routine health examination to assess overall well-being and detect potential health issues."
+    "description": "A routine health examination to assess overall well-being and detect potential health issues.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 2,
     "name": "Dental Care",
     "image_url": "https://i.ibb.co/MPDXdbx/image-2.jpg",
-    "description": "Comprehensive dental services including cleanings, fillings, and oral health assessments."
+    "description": "Comprehensive dental services including cleanings, fillings, and oral health assessments.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 3,
     "name": "Pediatric Care",
     "image_url": "https://i.ibb.co/G9GFC2F/image-3.jpg",
-    "description": "Specialized medical care for infants, children, and adolescents, ensuring their health and development."
+    "description": "Specialized medical care for infants, children, and adolescents, ensuring their health and development.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 4,
     "name": "Emergency Medicine",
     "image_url": "https://i.ibb.co/gDk1KWh/image-5.jpg",
-    "description": "Immediate medical care for critical conditions, injuries, and life-threatening emergencies."
+    "description": "Immediate medical care for critical conditions, injuries, and life-threatening emergencies.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 5,
     "name": "Women's Health",
     "image_url": "https://i.ibb.co/SBP5ny7/image-7.jpg",
-    "description": "Comprehensive healthcare services addressing women's unique health needs and concerns."
+    "description": "Comprehensive healthcare services addressing women's unique health needs and concerns.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 6,
     "name": "Radiology Services",
     "image_url": "https://i.ibb.co/x2M4jCb/post-1-img.jpg",
-    "description": "Diagnostic imaging services, including X-rays, CT scans, and MRI examinations."
+    "description": "Diagnostic imaging services, including X-rays, CT scans, and MRI examinations.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 7,
     "name": "Cardiology",
     "image_url": "https://i.ibb.co/pycdCBp/3.jpg",
-    "description": "Specialized care for heart-related issues, including diagnostic tests and treatment plans."
+    "description": "Specialized care for heart-related issues, including diagnostic tests and treatment plans.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 8,
     "name": "Mental Health Counseling",
     "image_url": "https://i.ibb.co/x73rT0C/04-gallery.jpg",
-    "description": "Therapeutic services for individuals facing mental health challenges, offering counseling and support."
+    "description": "Therapeutic services for individuals facing mental health challenges, offering counseling and support.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   },
   {
     "id": 9,
     "name": "Orthopedic Services",
     "image_url": "https://i.ibb.co/YBfqDWy/4.jpg",
-    "description": "Medical care focused on the musculoskeletal system, addressing bone, joint, and muscle conditions."
+    "description": "Medical care focused on the musculoskeletal system, addressing bone, joint, and muscle conditions.",
+    "more": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum reiciendis quam aliquam exercitationem cumque, accusamus fuga eligendi veritatis, ex nobis maxime blanditiis, corporis esse maiores? Alias, fuga. Obcaecati voluptatum consectetur nihil saepe, odio delectus ipsa doloribus repudiandae cum molestias non ipsam inventore recusandae commodi nesciunt quos fuga harum quam dicta laudantium officia laboriosam voluptates. Hic tenetur enim similique quas placeat consectetur aliquam cumque praesentium consequuntur, maxime error et rem blanditiis delectus assumenda, laudantium, quod qui doloribus amet. Doloribus minus."
   }
 ]

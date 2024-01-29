@@ -25,14 +25,14 @@ const Navbar = () => {
         Profile
       </NavLink>
       <NavLink
-        to={"/services"}
+        to={"/appointment"}
         className={({ isActive }) =>
           isActive
             ? "bg-custom-blue text-white px-2 py-1 rounded-md"
             : "px-2 py-1 rounded-md"
         }
       >
-        Services
+        Appointment
       </NavLink>
     </>
   );
