@@ -21,7 +21,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
       },
       {
         path: "/login",
@@ -33,7 +33,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/appointment",
-        element: <Appointment></Appointment>
+        element: <PrivateRoute><Appointment></Appointment></PrivateRoute>
       },
       {
         path: "/service/:id",
