@@ -1,9 +1,43 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Register = () => {
+    const {createUser, updateNamePhoto} = useContext(AuthContext)
 
-    const handleRegister = () => {
+    const handleRegister = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const photo = e.target.photo.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        const checked = e.target.terms.checked
+        
+        if(password.length < 6){
+          toast("Password must 6 character or more")
+          return
+        }else if(!checked){
+          toast("Accept terms & condition")
+          return
+        }
 
+        createUser(email, password)
+        .then(res => {
+            console.log(res.user)
+            toast("success sign in")
+            updateNamePhoto(name, photo)
+            .then(res => {
+                console.log(res.user)
+                toast("success update name photo")
+            })
+            .catch(err => {
+                toast(err.message)
+            })
+        })
+        .catch(err => {
+            toast(err.message)
+        })
     }
   return (
       <div className="hero min-h-[88vh]">

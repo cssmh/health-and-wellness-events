@@ -1,7 +1,7 @@
 import navLogo from "../../assets/iconmain.png";
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-base-300 text-base-content pl-12 mt-12">
+    <footer className="footer p-10 bg-base-300 text-base-content pl-12 mt-6">
       <aside>
         <img className="w-12" src={navLogo} alt="" /> MediCare
         <p>
