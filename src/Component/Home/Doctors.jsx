@@ -16,24 +16,28 @@ const Doctors = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <img
           src={d1}
+          data-aos="fade-right"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Robert"
         />
         <img
           src={d2}
+          data-aos="fade-right"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Sumaiya Easmin"
         />
         <img
           src={d3}
+          data-aos="fade-left"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Kamrunnahar Kona"
         />
         <img
           src={d4}
+          data-aos="fade-left"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Khubayed Siam"
