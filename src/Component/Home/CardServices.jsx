@@ -7,7 +7,7 @@ const CardServices = ({ getServices }) => {
     <div
       className="border border-gray-300 p-5 rounded-lg flex flex-col"
       data-aos="zoom-in"
-      data-aos-delay="300"
+      data-aos-delay="200"
       data-aos-offset="100"
     >
       <div className="flex-grow">

@@ -18,6 +18,8 @@ const Register = () => {
         if(password.length < 6){
           toast("Password must 6 character or more")
           return
+        }else if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\/-]).+$/.test(password)){
+          return toast("Use at least one uppercase and special character")
         }else if(!checked){
           toast("Accept terms & condition")
           return
@@ -26,7 +28,7 @@ const Register = () => {
         createUser(email, password)
         .then(res => {
             console.log(res.user)
-            toast("success sign in")
+            toast("Success sign in")
             navigateTo("/")
             updateNamePhoto(name, photo)
             .then(res => {
