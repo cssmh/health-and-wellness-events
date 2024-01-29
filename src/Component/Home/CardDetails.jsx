@@ -13,8 +13,8 @@ const CardDetails = () => {
     setMatch(bothMatching);
   }, [allData, id]);
 
-  const localStorageSet = (idx) => {
-    setToLocalStorage(idx)
+  const localStorageSet = (idx, name) => {
+    setToLocalStorage(idx, name)
   }
   
   return (

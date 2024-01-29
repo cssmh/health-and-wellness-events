@@ -9,13 +9,13 @@ const getLocalStorage = () => {
   }
 };
 
-const setToLocalStorage = (getId) => {
+const setToLocalStorage = (getId, name) => {
   const getFirst = getLocalStorage();
   const checkExist = getFirst.find((localId) => localId === getId);
   if (checkExist) {
     swal("Sorry!", "You already take appointment from here!", "error");
   } else {
-    swal("Good job!", "Your appointment successful!", "success");
+    swal("Congratulations!", `Appointment successful on ${name}!`, "success");
     getFirst.push(getId);
     localStorage.setItem("appointment", JSON.stringify(getFirst));
   }
