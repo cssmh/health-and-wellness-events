@@ -20,7 +20,7 @@ const CardServices = ({ getServices }) => {
       </div>
       <Link to={`/service/${id}`}>
         <button className="bg-custom-blue w-full text-white py-1 rounded-md">
-          Choose {name}
+          More about {name}
         </button>
       </Link>
     </div>
