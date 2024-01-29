@@ -3,11 +3,13 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Component/Home/Home";
 import Profile from "../Component/Profile/Profile";
 import Services from "../Component/Services/Services";
+import ErrorPage from "../Component/ErrorPage/ErrorPage";
 
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -26,6 +28,3 @@ const Router = createBrowserRouter([
 ]);
 
 export default Router;
-
-
-{/* <div class="flex mt-10 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400" data-aos-offset="100"></div> */}

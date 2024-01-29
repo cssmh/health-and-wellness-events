@@ -38,7 +38,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-300 my-4 px-7">
+    <div className="navbar bg-base-300 my-4 px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className=" -ghost lg:hidden">
@@ -64,7 +64,10 @@ const Navbar = () => {
             {allNav}
           </ul>
         </div>
-        <Link to={"/"} className="flex items-center text-2xl gap-2 font-semibold">
+        <Link
+          to={"/"}
+          className="flex items-center text-2xl gap-2 font-semibold"
+        >
           <img className="w-12" src={navLogo} alt="" /> MediCare
         </Link>
       </div>
@@ -72,7 +75,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{allNav}</ul>
       </div>
       <div className="navbar-end">
-        <a className="">Login</a>
+        <Link to={"/login"}>Login</Link>
       </div>
     </div>
   );
