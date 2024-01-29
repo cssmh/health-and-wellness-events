@@ -1,9 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { getLocalStorage } from "../../LocalStorage/LocalStorage";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
   const { displayName, email, emailVerified, photoURL } = user;
+
+  const getLocalIdx = getLocalStorage()
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -13,7 +16,8 @@ const Profile = () => {
           <img src={photoURL} alt="" />
         </div>
         <div>
-          <p className="text-xl font-semibold mb-3">Your appointment:</p>
+          <p className="text-xl font-semibold">Your appointment: {getLocalIdx.length}</p>
+          <p className="text-custom-blue text-center mb-3">Wait for your call</p>
           <p>
             {emailVerified
               ? "Thanks for verifying your email"

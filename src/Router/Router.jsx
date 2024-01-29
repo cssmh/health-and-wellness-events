@@ -33,7 +33,8 @@ const Router = createBrowserRouter([
       },
       {
         path: "/appointment",
-        element: <PrivateRoute><Appointment></Appointment></PrivateRoute>
+        element: <PrivateRoute><Appointment></Appointment></PrivateRoute>,
+        loader: ()=> fetch("/services.json")
       },
       {
         path: "/service/:id",
