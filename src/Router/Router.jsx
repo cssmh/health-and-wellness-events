@@ -5,6 +5,8 @@ import Profile from "../Component/Profile/Profile";
 import ErrorPage from "../Component/ErrorPage/ErrorPage";
 import CardDetails from "../Component/Home/CardDetails";
 import Appointment from "../Component/Appointment/Appointment";
+import Login from "../Component/Login/Login";
+import Register from "../Component/Register/Register";
 
 const Router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const Router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile></Profile>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
       },
       {
         path: "/appointment",

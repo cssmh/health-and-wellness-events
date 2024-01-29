@@ -75,7 +75,16 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{allNav}</ul>
       </div>
       <div className="navbar-end">
-        <Link to={"/login"}>Login</Link>
+      <NavLink
+        to={"/login"}
+        className={({ isActive }) =>
+          isActive
+            ? "bg-custom-blue text-white px-2 py-1 rounded-md"
+            : "px-2 py-1 rounded-md"
+        }
+      >
+        Login
+      </NavLink>
       </div>
     </div>
   );
