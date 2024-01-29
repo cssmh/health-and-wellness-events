@@ -1,13 +1,16 @@
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
   const { signInUser, googlePopupLogin, githubPopupLogin, forgotPassword } =
     useContext(AuthContext);
+    const [view, setView] = useState(true);
 
   const handleGooglePopupLogin = () => {
     googlePopupLogin()
@@ -87,17 +90,23 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control relative">
               <label className="label">
                 <span className="label-text font-semibold">Password</span>
               </label>
               <input
-                type="password"
+                type={view ? "password" : "text"}
                 name="password"
                 placeholder="Enter your password"
                 className="input input-bordered"
                 required
               />
+              <span
+              className="absolute top-[50px] right-3"
+              onClick={() => setView(!view)}
+            >
+              {view ? <FaRegEyeSlash /> : <FaRegEye />}
+            </span>
               <label className="label">
                 <a
                   onClick={handleForgotPassword}
