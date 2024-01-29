@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { useContext, useRef } from "react";
@@ -31,6 +31,9 @@ const Login = () => {
       });
   };
 
+  const location = useLocation()
+  const navigateTo = useNavigate()
+  // console.log(location);
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -40,6 +43,7 @@ const Login = () => {
       .then((res) => {
         console.log(res.user);
         toast("Success logged in");
+        navigateTo(location.state ? location.state : "/")
       })
       .catch((err) => {
         toast(err.message);
@@ -113,7 +117,7 @@ const Login = () => {
           <div className="text-center mb-4 text-sm font-semibold">
             <p>
               Dont’t Have An Account ?{" "}
-              <Link to={"/register"} className="text-custom-blue">
+              <Link to={"/register"} state={location.pathname} className="text-custom-blue">
                 Register
               </Link>
             </p>

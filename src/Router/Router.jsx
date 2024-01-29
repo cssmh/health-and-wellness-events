@@ -7,6 +7,7 @@ import CardDetails from "../Component/Home/CardDetails";
 import Appointment from "../Component/Appointment/Appointment";
 import Login from "../Component/Login/Login";
 import Register from "../Component/Register/Register";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <CardDetails></CardDetails>,
+        element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
         loader: ()=> fetch("/services.json")
       },
     ]
