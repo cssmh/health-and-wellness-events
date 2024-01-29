@@ -6,7 +6,29 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-    const { signInUser } = useContext(AuthContext)
+    const { signInUser, googlePopupLogin, githubPopupLogin } = useContext(AuthContext)
+
+    const handleGooglePopupLogin = () => {
+        googlePopupLogin()
+        .then(res => {
+            console.log(res.user)
+            toast("Success google logged in")
+        })
+        .catch(err => {
+            toast(err.message)
+        })
+    }
+
+    const handleGithubPopupLogin = () => {
+        githubPopupLogin()
+        .then(res => {
+            console.log(res.user)
+            toast("Success github logged in")
+        })
+        .catch(err => {
+            toast(err.message)
+        })
+    }
 
     const handleLogin = e => {
         e.preventDefault()
@@ -16,7 +38,7 @@ const Login = () => {
         signInUser(email, password)
         .then(res => {
             console.log(res.user)
-            toast("success logged in")
+            toast("Success logged in")
         })
         .catch(err => {
             toast(err.message)
@@ -78,8 +100,8 @@ const Login = () => {
             </p>
           </div>
           <div className="mx-auto space-x-1">
-            <button className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FcGoogle /></button>
-            <button className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FaGithub /></button>
+            <button onClick={handleGooglePopupLogin} className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FcGoogle /></button>
+            <button onClick={handleGithubPopupLogin} className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FaGithub /></button>
           </div>
         </div>
       </div>

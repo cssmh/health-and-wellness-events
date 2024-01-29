@@ -1,7 +1,14 @@
+import { useContext } from "react";
 import navLogo from "../../assets/iconmain.png";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOut().then().catch();
+  };
   const allNav = (
     <>
       <NavLink
@@ -75,16 +82,28 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{allNav}</ul>
       </div>
       <div className="navbar-end">
-      <NavLink
-        to={"/login"}
-        className={({ isActive }) =>
-          isActive
-            ? "bg-custom-blue text-white px-2 py-1 rounded-md"
-            : "px-2 py-1 rounded-md"
-        }
-      >
-        Login
-      </NavLink>
+        {user ? (
+          <div className="flex items-center">
+            <img src={user.photoURL} className="w-10 rounded-2xl mr-2" alt="" />
+            <h1>
+              Hi, <span className="font-semibold mr-2">{user.displayName}</span>
+            </h1>
+            <button onClick={handleLogout} className="text-custom-blue">
+              Logout
+            </button>
+          </div>
+        ) : (
+          <NavLink
+            to={"/login"}
+            className={({ isActive }) =>
+              isActive
+                ? "bg-custom-blue text-white px-2 py-1 rounded-md"
+                : "px-2 py-1 rounded-md"
+            }
+          >
+            Login
+          </NavLink>
+        )}
       </div>
     </div>
   );

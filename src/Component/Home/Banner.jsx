@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import banner from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="max-w-6xl mx-auto mb-12">
+    <div className="max-w-6xl mx-auto mb-12 mt-3">
       <div className="flex justify-between items-center gap-2">
         <div className="w-3/5">
           <p className="text-custom-blue font-bold">BEST PRACTICES</p>
