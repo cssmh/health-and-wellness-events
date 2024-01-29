@@ -14,10 +14,30 @@ const Doctors = () => {
         <img src={pulse} className="mx-auto w-16" alt="" />
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <img src={d1} className="bg-white p-1 border-2 rounded-md" alt="" />
-        <img src={d2} className="bg-white p-1 border-2 rounded-md" alt="" />
-        <img src={d3} className="bg-white p-1 border-2 rounded-md" alt="" />
-        <img src={d4} className="bg-white p-1 border-2 rounded-md" alt="" />
+        <img
+          src={d1}
+          className="bg-white p-1 border-2 rounded-md mx-auto"
+          alt=""
+          title="Dr. Robert"
+        />
+        <img
+          src={d2}
+          className="bg-white p-1 border-2 rounded-md mx-auto"
+          alt=""
+          title="Dr. Sumaiya Easmin"
+        />
+        <img
+          src={d3}
+          className="bg-white p-1 border-2 rounded-md mx-auto"
+          alt=""
+          title="Dr. Kamrunnahar Kona"
+        />
+        <img
+          src={d4}
+          className="bg-white p-1 border-2 rounded-md mx-auto"
+          alt=""
+          title="Dr. Khubayed Siam"
+        />
       </div>
     </div>
   );
