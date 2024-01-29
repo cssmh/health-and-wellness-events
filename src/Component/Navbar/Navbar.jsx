@@ -102,13 +102,10 @@ const Navbar = () => {
               className="w-8 lg:w-10 rounded-2xl mr-1 lg:mr-2"
               alt=""
             />
-            <h1>
-              Hi,{" "}
-              <span className="font-semibold mr-1 lg:mr-2">
-                {user.displayName}
-              </span>
+            <h1 className="text-custom-blue mr-1 lg:mr-2">
+              {user.displayName}
             </h1>
-            <button onClick={handleLogout} className="text-custom-blue">
+            <button onClick={handleLogout} className="font-semibold bg-custom-blue text-white p-1 rounded-md">
               Logout
             </button>
           </div>

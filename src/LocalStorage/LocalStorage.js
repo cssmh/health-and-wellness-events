@@ -21,4 +21,10 @@ const setToLocalStorage = (getId) => {
   }
 };
 
-export { getLocalStorage, setToLocalStorage };
+const removeFromLocalStorage = (getId) => {
+    const getLocal = getLocalStorage()
+    const removeAfter = getLocal.filter(local => local !== getId)
+    localStorage.setItem("appointment", JSON.stringify(removeAfter))
+}
+
+export { getLocalStorage, setToLocalStorage, removeFromLocalStorage };

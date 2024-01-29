@@ -17,6 +17,7 @@ const Login = () => {
       .then((res) => {
         console.log(res.user);
         toast("Success google logged in");
+        navigateTo(location.state ? location.state : "/")
       })
       .catch((err) => {
         toast(err.message);
@@ -28,6 +29,7 @@ const Login = () => {
       .then((res) => {
         console.log(res.user);
         toast("Success github logged in");
+        navigateTo(location.state ? location.state : "/")
       })
       .catch((err) => {
         toast(err.message);
