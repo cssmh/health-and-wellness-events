@@ -8,8 +8,8 @@ const Banner = () => {
       data-aos-delay="200"
       data-aos-offset="100"
     >
-      <div className="flex justify-between items-center gap-2">
-        <div className="w-3/5">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-2">
+        <div className="mx-5 lg:mx-0 lg:w-3/5">
           <p className="text-custom-blue font-bold">BEST PRACTICES</p>
           <h1 className="text-5xl font-semibold text-[#004861] my-4">
             Clinic with Innovative<br></br> Approach To Treatment
@@ -29,7 +29,7 @@ const Banner = () => {
             </button>
           </Link>
         </div>
-        <div className="w-2/5">
+        <div className="mx-1 lg:mx-0 lg:w-2/5">
           <img src={banner} alt="" />
         </div>
       </div>

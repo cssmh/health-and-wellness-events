@@ -6,61 +6,61 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-    const { signInUser, googlePopupLogin, githubPopupLogin, forgotPassword } = useContext(AuthContext)
+  const { signInUser, googlePopupLogin, githubPopupLogin, forgotPassword } =
+    useContext(AuthContext);
 
-    const handleGooglePopupLogin = () => {
-        googlePopupLogin()
-        .then(res => {
-            console.log(res.user)
-            toast("Success google logged in")
+  const handleGooglePopupLogin = () => {
+    googlePopupLogin()
+      .then((res) => {
+        console.log(res.user);
+        toast("Success google logged in");
+      })
+      .catch((err) => {
+        toast(err.message);
+      });
+  };
+
+  const handleGithubPopupLogin = () => {
+    githubPopupLogin()
+      .then((res) => {
+        console.log(res.user);
+        toast("Success github logged in");
+      })
+      .catch((err) => {
+        toast(err.message);
+      });
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    signInUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+        toast("Success logged in");
+      })
+      .catch((err) => {
+        toast(err.message);
+      });
+  };
+
+  const useRefer = useRef();
+  const handleForgotPassword = () => {
+    const getEmail = useRefer.current.value;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getEmail)) {
+      toast("Enter a valid email");
+    } else {
+      forgotPassword(getEmail)
+        .then(() => {
+          toast("Verification email sent");
         })
-        .catch(err => {
-            toast(err.message)
-        })
+        .catch((err) => {
+          toast(err.message);
+        });
     }
-
-    const handleGithubPopupLogin = () => {
-        githubPopupLogin()
-        .then(res => {
-            console.log(res.user)
-            toast("Success github logged in")
-        })
-        .catch(err => {
-            toast(err.message)
-        })
-    }
-
-    const handleLogin = e => {
-        e.preventDefault()
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-
-        signInUser(email, password)
-        .then(res => {
-            console.log(res.user)
-            toast("Success logged in")
-        })
-        .catch(err => {
-            toast(err.message)
-        })
-    }
-
-    const useRefer = useRef()
-    const handleForgotPassword = () => {
-        const getEmail = useRefer.current.value;
-        if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getEmail)){
-            toast("Enter a valid email")
-        }else{
-            forgotPassword(getEmail)
-            .then(() => {
-                toast("Verification email sent")
-            })
-            .catch(err => {
-                toast(err.message)
-            })
-        }
-
-    }
+  };
 
   return (
     <div className="bg-[#F3F3F3]">
@@ -96,7 +96,7 @@ const Login = () => {
               />
               <label className="label">
                 <a
-                onClick={handleForgotPassword}
+                  onClick={handleForgotPassword}
                   href="#"
                   className="label-text-alt link link-hover font-semibold"
                 >
@@ -119,8 +119,18 @@ const Login = () => {
             </p>
           </div>
           <div className="mx-auto space-x-1">
-            <button onClick={handleGooglePopupLogin} className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FcGoogle /></button>
-            <button onClick={handleGithubPopupLogin} className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"><FaGithub /></button>
+            <button
+              onClick={handleGooglePopupLogin}
+              className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"
+            >
+              <FcGoogle />
+            </button>
+            <button
+              onClick={handleGithubPopupLogin}
+              className="mb-5 text-2xl px-5 py-2 rounded-lg bg-red-100"
+            >
+              <FaGithub />
+            </button>
           </div>
         </div>
       </div>

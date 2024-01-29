@@ -3,11 +3,12 @@ const Footer = () => {
   return (
     <footer className="footer p-10 bg-base-300 text-base-content pl-12 mt-6">
       <aside>
-        <img className="w-12" src={navLogo} alt="" /> MediCare
+        <img className="w-16" src={navLogo} alt="" />{" "}
+        <span className="text-xl font-semibold text-custom-blue">MediCare</span>
         <p>
-          ACME Industries Ltd.
+        MediCare Industries Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing Reliable care since 1999, Aug
         </p>
       </aside>
       <nav>

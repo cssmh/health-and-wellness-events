@@ -2,7 +2,7 @@ import patient from "../../assets/momen.jpeg";
 const Patient = () => {
   return (
     <div className="text-center">
-      <h1 className="text-3xl text-custom-blue font-semibold">
+      <h1 className="text-3xl text-custom-blue font-semibold mx-1 lg:mx-0">
         WHAT OUR PATIENTS SAY ABOUT US
       </h1>
       <p className="px-16 my-5">

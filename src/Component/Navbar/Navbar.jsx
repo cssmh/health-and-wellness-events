@@ -73,9 +73,9 @@ const Navbar = () => {
         </div>
         <Link
           to={"/"}
-          className="flex items-center text-2xl gap-2 font-semibold"
+          className="flex items-center text-lg lg:text-2xl gap-2 font-semibold"
         >
-          <img className="w-12" src={navLogo} alt="" /> MediCare
+          <img className="w-9 lg:w-12 ml-2 lg:ml-0" src={navLogo} alt="" /> MediCare
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -84,9 +84,9 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <div className="flex items-center">
-            <img src={user.photoURL} className="w-10 rounded-2xl mr-2" alt="" />
+            <img src={user.photoURL} className="w-8 lg:w-10 rounded-2xl mr-1 lg:mr-2" alt="" />
             <h1>
-              Hi, <span className="font-semibold mr-2">{user.displayName}</span>
+              Hi, <span className="font-semibold mr-1 lg:mr-2">{user.displayName}</span>
             </h1>
             <button onClick={handleLogout} className="text-custom-blue">
               Logout
