@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-    const { signInUser, googlePopupLogin, githubPopupLogin } = useContext(AuthContext)
+    const { signInUser, googlePopupLogin, githubPopupLogin, forgotPassword } = useContext(AuthContext)
 
     const handleGooglePopupLogin = () => {
         googlePopupLogin()
@@ -45,6 +45,23 @@ const Login = () => {
         })
     }
 
+    const useRefer = useRef()
+    const handleForgotPassword = () => {
+        const getEmail = useRefer.current.value;
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getEmail)){
+            toast("Enter a valid email")
+        }else{
+            forgotPassword(getEmail)
+            .then(() => {
+                toast("Verification email sent")
+            })
+            .catch(err => {
+                toast(err.message)
+            })
+        }
+
+    }
+
   return (
     <div className="bg-[#F3F3F3]">
       <div className="hero min-h-[88vh]">
@@ -59,6 +76,7 @@ const Login = () => {
               </label>
               <input
                 type="email"
+                ref={useRefer}
                 name="email"
                 placeholder="Enter your email address"
                 className="input input-bordered"
@@ -78,6 +96,7 @@ const Login = () => {
               />
               <label className="label">
                 <a
+                onClick={handleForgotPassword}
                   href="#"
                   className="label-text-alt link link-hover font-semibold"
                 >
