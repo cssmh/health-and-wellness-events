@@ -16,7 +16,7 @@ const CardServices = ({ getServices }) => {
         </h1>
         <img src={image_url} alt="" />
 
-        <p className="my-2 text-gray-500">{description}</p>
+        <p className="my-2 text-gray-500">{description.slice(0,150)}....</p>
       </div>
       <Link to={`/service/${id}`}>
         <button className="bg-custom-blue w-full text-white py-1 rounded-md">
