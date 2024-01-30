@@ -1,3 +1,4 @@
+import prescription from "../../assets/med.png";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { setToLocalStorage } from "../../LocalStorage/LocalStorage";
@@ -14,18 +15,24 @@ const CardDetails = () => {
   }, [allData, id]);
 
   const localStorageSet = (idx, name) => {
-    setToLocalStorage(idx, name)
-  }
-  
+    setToLocalStorage(idx, name);
+  };
+
   return (
     <div className="max-w-7xl mx-auto">
-      <p className="my-3">{more}</p>
-      <h1 className="text-xl text-custom-blue mb-2 font-semibold">{name}</h1>
-      <img src={image_url} className="my-4" alt="" />
-      <button onClick={()=>localStorageSet(match.id, name)} className="bg-custom-blue my-5 text-white px-4 rounded-md py-2">
+      <div className="flex flex-col lg:flex-row">
+        <p className="my-3 text-gray-500 px-4 lg:px-0">{more}</p>
+        <img className="lg:w-1/5 p-3" src={prescription} alt="" />
+      </div>
+      <h1 className="text-2xl text-custom-blue mb-2 font-semibold pl-3 lg:pl-0">{name}</h1>
+      <img src={image_url} className="my-4 mx-1 lg:mx-0" alt="" />
+      <button
+        onClick={() => localStorageSet(match.id, name)}
+        className="bg-custom-blue my-5 text-white px-4 rounded-md py-2 ml-3 lg:ml-0"
+      >
         Get an Appointment
       </button>
-      <p>{description}</p>
+      <p className="text-gray-500 px-3 lg:px-0">{description}</p>
     </div>
   );
 };
