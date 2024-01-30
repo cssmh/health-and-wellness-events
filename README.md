@@ -1,6 +1,8 @@
 ## live link
 
 # https://health-and-wellness-even-4454d.web.app
+# https://medicaremh.netlify.app
+# https://watery-mint.surge.sh
 
 ## Key features in this website
 
