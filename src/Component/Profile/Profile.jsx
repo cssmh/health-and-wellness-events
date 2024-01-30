@@ -6,25 +6,31 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
   const { displayName, email, emailVerified, photoURL } = user;
 
-  const getLocalIdx = getLocalStorage()
+  const getLocalIdx = getLocalStorage();
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="my-12 flex justify-between">
+      <div className="my-12 flex flex-col lg:flex-row justify-between">
         <div>
-          <h1 className="mb-4 text-xl font-semibold">{displayName}</h1>
-          <img src={photoURL} alt="" />
+          <h1 className="mb-4 text-xl font-semibold px-5 lg:px-0">
+            {displayName}
+          </h1>
+          <img className="lg:w-48" src={photoURL} alt="" />
         </div>
-        <div>
-          <p className="text-xl font-semibold">Your appointment: {getLocalIdx.length}</p>
-          <p className="text-custom-blue text-center mb-3">Wait for your call</p>
+        <div className="text-center">
+          <p className="text-xl font-semibold">
+            Your appointment: {getLocalIdx.length}
+          </p>
+          <p className="text-custom-blue mb-3">
+            Wait for your call
+          </p>
           <p>
             {emailVerified
               ? "Thanks for verifying your email"
               : "Verify your email please!"}
           </p>
         </div>
-        <p className="text-xl font-semibold">{email ? email : "No email?!"}</p>
+        <p className="text-xl text-center font-semibold">{email ? email : "No email?!"}</p>
       </div>
     </div>
   );
