@@ -87,7 +87,7 @@ const Navbar = () => {
           to={"/"}
           className="flex items-center text-lg lg:text-2xl gap-2 font-semibold"
         >
-          <img className="w-9 lg:w-12 ml-2 lg:ml-0" src={navLogo} alt="" />{" "}
+          <img className="w-0 lg:w-12 ml-2 lg:ml-0" src={navLogo} alt="" />{" "}
           MediCare
         </Link>
       </div>
