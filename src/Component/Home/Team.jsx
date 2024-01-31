@@ -11,7 +11,11 @@ const Team = () => {
           professionals today!
         </p>
       </div>
-      <div className="lg:w-2/5">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        className="lg:w-2/5"
+      >
         <img src={team} alt="" />
       </div>
     </div>

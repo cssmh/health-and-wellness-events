@@ -15,22 +15,27 @@ const Profile = () => {
           <h1 className="text-center mb-4 text-xl font-semibold px-5 lg:px-0">
             {displayName}
           </h1>
-          <img className="lg:w-48 mx-auto" src={photoURL} alt="" />
+          <img
+            data-aos="flip-right"
+            className="lg:w-48 mx-auto"
+            src={photoURL}
+            alt=""
+          />
         </div>
         <div className="text-center mt-6 lg:mt-0">
           <p className="text-xl font-semibold">
             Your appointment: {getLocalIdx.length}
           </p>
-          <p className="text-custom-blue mb-3">
-            Wait for your call
-          </p>
+          <p className="text-custom-blue mb-3">Wait for your call</p>
           <p>
             {emailVerified
               ? "Thanks for verifying your email"
               : "Verify your email please!"}
           </p>
         </div>
-        <p className="text-xl text-center font-semibold">{email ? email : "No email?!"}</p>
+        <p className="text-xl text-center font-semibold">
+          {email ? email : "No email?!"}
+        </p>
       </div>
     </div>
   );
