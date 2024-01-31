@@ -19,7 +19,7 @@ const CardDetails = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div>
       <div className="flex flex-col lg:flex-row">
         <p className="my-3 text-gray-500 px-4 lg:px-0">{more}</p>
         <img className="lg:w-1/5 p-3" src={prescription} alt="" />

@@ -3,7 +3,7 @@ import banner from "../../assets/banner.png";
 const Banner = () => {
   return (
     <div
-      className="max-w-6xl mx-auto mb-12 mt-3"
+      className="mb-12 mt-3"
       data-aos="zoom-in-right"
       data-aos-delay="200"
       data-aos-offset="100"
@@ -29,7 +29,7 @@ const Banner = () => {
             </button>
           </Link>
         </div>
-        <div className="mx-1 lg:mx-0 lg:w-2/5">
+        <div className="lg:w-2/5">
           <img src={banner} alt="" />
         </div>
       </div>

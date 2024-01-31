@@ -13,7 +13,7 @@ const Doctors = () => {
         </h1>
         <img src={pulse} className="mx-auto w-16" alt="" />
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <img
           src={d1}
           data-aos="fade-right"
@@ -23,14 +23,14 @@ const Doctors = () => {
         />
         <img
           src={d2}
-          data-aos="fade-right"
+          data-aos="fade-left"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Sumaiya Easmin"
         />
         <img
           src={d3}
-          data-aos="fade-left"
+          data-aos="fade-right"
           className="bg-white p-1 border-2 rounded-md mx-auto"
           alt=""
           title="Dr. Kamrunnahar Kona"

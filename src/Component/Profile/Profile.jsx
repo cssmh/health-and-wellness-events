@@ -12,12 +12,12 @@ const Profile = () => {
     <div className="max-w-6xl mx-auto">
       <div className="my-12 flex flex-col lg:flex-row justify-between">
         <div>
-          <h1 className="mb-4 text-xl font-semibold px-5 lg:px-0">
+          <h1 className="text-center mb-4 text-xl font-semibold px-5 lg:px-0">
             {displayName}
           </h1>
-          <img className="lg:w-48" src={photoURL} alt="" />
+          <img className="lg:w-48 mx-auto" src={photoURL} alt="" />
         </div>
-        <div className="text-center">
+        <div className="text-center mt-6 lg:mt-0">
           <p className="text-xl font-semibold">
             Your appointment: {getLocalIdx.length}
           </p>

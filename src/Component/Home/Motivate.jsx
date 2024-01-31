@@ -1,7 +1,7 @@
 import motivate from "../../assets/yah.png";
 const Motivate = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center mt-7 max-w-[1200px] mx-auto bg-blue-300 rounded-lg">
+    <div className="flex flex-col lg:flex-row justify-between items-center mt-7 bg-blue-300 rounded-lg">
       <div className="lg:w-3/5 pl-16 pt-8 lg:pt-0">
         <h1 className="text-5xl text-white font-semibold">
           Don’t Let Your Health Take a Backseat!

@@ -19,7 +19,7 @@ const Services = () => {
         </h1>
         <img src={pulse} className="mx-auto w-16" alt="" />
       </div>
-      <div className="max-w-6xl mx-auto gap-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="gap-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {dataServices.map((solo) => (
           <CardServices key={solo.id} getServices={solo}></CardServices>
         ))}
