@@ -3,7 +3,7 @@ import { FaRegEye } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import Navbar from "../Navbar/Navbar";
 
 const Register = () => {
@@ -13,7 +13,11 @@ const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
-    const photo = e.target.photo.value;
+
+    const photoInputValue = e.target.photo.value;
+    const defaultPhotoUrl = 'https://example.com/default-photo.jpg';
+
+    const photo = photoInputValue.trim() !== '' ? photoInputValue : defaultPhotoUrl;
     const email = e.target.email.value;
     const password = e.target.password.value;
     const checked = e.target.terms.checked;
@@ -79,7 +83,6 @@ const Register = () => {
                 name="photo"
                 placeholder="Enter your Photo URL"
                 className="input input-bordered"
-                required
               />
             </div>
             <div className="form-control">
@@ -132,6 +135,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
