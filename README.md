@@ -11,3 +11,4 @@
 * Will re-directly let user go to the page he wanted to go before login
 * Navbar will show user name and photo when logged in
 * Added AOS style features, profile details and appointment where user<br> can see their appointed list with details, also they can remove it.
+* Card details data is added from ChatGPT added.
